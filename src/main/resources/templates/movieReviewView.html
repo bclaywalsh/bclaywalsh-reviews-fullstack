@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <!--    <meta charset="UTF-8">-->
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link href="/css/layout.css" rel="stylesheet"/>
+    <title th:text="${movieReview.name}+' - BClayWalsh Review'">BClayWalsh Review</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav class="top-nav">
+            <h1><a href="/reviews">BClayWalsh Reviews:</a></h1>
+        </nav>
+        <div class="subheader">
+            <h2 class="currentType">Indie Movies</h2>
+            <h3 class="type2">Movies</h3>
+            <h3 class="type3">Books</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="focusedReviewListColumn">
+            <div class="reviewListColumnItems">
+                <a href="/review?id=3">Axiom Verge</a>
+                <a href="/review?id=2">Bastion</a>
+                <a href="/review?id=4">Hyper Light Drifter</a>
+                <a href="/review?id=1">Transistor</a>
+            </div>
+        </div>
+        <article class="reviewBox">
+            <img class="TextWrap" th:src="${movieReview.image}" alt="movie cover">
+            <!--            <h2 class="review-content"></h2>-->
+            <!--            <h2 class="review-content" th:text="${reviewModel.content}"></h2>-->
+            <p class="WrappedText" th:text="${movieReview.content}"></p>
+
+        </article>
+        <h2 class="mediaTitleHeader" th:text="${movieReview.name}"></h2>
+        <div class="rightBoxOutline"></div>
+        <div class="leftDecorativeBoxOutline"></div>
+        <div class="leftDecorativeBoxOutline2"></div>
+    </main>
+    <footer class="footer">
+        <nav class="footlinks">
+            <a href="mailto:bclaywalsh@gmail.com"
+            >email me: bclaywalsh@gmail.com</a
+            >
+            <a href="http://www.linkedin.com/in/benjamin-walsh-46899445"
+            >linkedIn</a
+            >
+            <a href="https://github.com/bclaywalsh">GitHub</a>
+            <a href="http://bclaywalsh.wixsite.com/portfolio">art portfolio</a>
+            <a href="mailto:DerelictStar01@gmail.com"
+            >email Derelict Star: derelictstar01@gmail.com</a
+            >
+        </nav>
+    </footer>
+</div>
+</body>
+</html>
