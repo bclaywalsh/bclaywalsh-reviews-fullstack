@@ -14,13 +14,13 @@ public class GameReviewController {
     @Resource
     private GameReviewsRepository gameReviewRepo;
 
-    @RequestMapping({"/gameReviews","/",""})
+    @RequestMapping({"/gameReviews"})
     public String findAllReviews(Model model) {
         model.addAttribute("gameReviews", gameReviewRepo.findAll());
         return "gameReviewsView";
     }
 
-    @GetMapping("/gameReviews/{gameReview}")
+    @RequestMapping("/gameReviews/{gameReview}")
     public String findOneReview(@PathVariable String gameReview, Model model){
         GameReview retrievedGameReview = gameReviewRepo.findByName(gameReview);
         model.addAttribute("gameReview", retrievedGameReview);

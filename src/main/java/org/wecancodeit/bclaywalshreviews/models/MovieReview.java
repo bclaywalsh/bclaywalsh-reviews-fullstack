@@ -3,6 +3,7 @@ package org.wecancodeit.bclaywalshreviews.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import java.util.Objects;
 
 @Entity
@@ -11,7 +12,9 @@ public class MovieReview {
     @Id
     @GeneratedValue
     private Long id;
+    @Lob
     private String overview;
+    @Lob
     private String content;
     private String name;
     private String director;
@@ -21,8 +24,7 @@ public class MovieReview {
     protected MovieReview() {
     }
 
-    public MovieReview(long id, String name, String category, String image, String director, String overview, String content) {
-        this.id = id;
+    public MovieReview(String name, String category, String image, String director, String overview, String content) {
         this.name = name;
         this.content = content;
         this.image = image;

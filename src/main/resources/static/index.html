@@ -11,25 +11,17 @@
 <div class="container">
     <header>
         <nav class="top-nav">
-            <h1><a href="/index.html">BClayWalsh Reviews:</a></h1>
+            <h1>BClayWalsh Reviews:</a></h1>
         </nav>
         <div class="subheader">
             <h2 class="currentType">Indie Games</h2>
-            <h3><a class="type2" href="/movieReviews">Movies</a></h3>
-            <h3><a class="type3" href="/bookReviews">Books</a></h3>
+            <h3 class="type2">Movies</h3>
+            <h3 class="type3">Books</h3>
         </div>
     </header>
     <main>
-        <div class="focusedReviewListColumn">
-            <div class="reviewListColumnItems" th:each="gameReview: ${gameReviews}">
-                <a
-                        th:href="@{'/gameReviews/'+${gameReview.name}}"
-                        th:text="${gameReview.name}"
-                ></a>
-            </div>
-            <div class="leftDecorativeBoxOutline"></div>
-        </div>
         <div class="rightBoxOutline"></div>
+        <div class="leftDecorativeBoxOutline"></div>
         <div class="leftDecorativeBoxOutline2"></div>
         <img class="decorativeBackGroundImage" src="images/ADream.jpg" alt="A panorama of a galaxy with overlaid text">
         <img class="decorativeOverlayImage1" src="images/BIGAngelaBack.png"

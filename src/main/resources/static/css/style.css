@@ -2,29 +2,6 @@ body {
     background-image: linear-gradient(rgb(100, 100, 120), rgb(60, 60, 70));
 }
 
-/*body:hover {*/
-/*  position: fixed;*/
-/*  top: 0px;*/
-/*  left: 0px;*/
-/*  height: 100%;*/
-/*  width: 100%;*/
-
-/*  background: rgb(100, 100, 120);*/
-/*  background: radial-gradient(*/
-/*          at center, #3498db, #9b59b6 );*/
-/*}*/
-
-/*javascript needed to make radial gradient follow cursor*/
-/*$(document).mousemove(function(event) {*/
-/*  windowWidth = $(window).width();*/
-/*  windowHeight = $(window).height();*/
-
-/*  mouseXpercentage = Math.round(event.pageX / windowWidth * 100);*/
-/*  mouseYpercentage = Math.round(event.pageY / windowHeight * 100);*/
-
-/*  $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');*/
-/*});*/
-
 .top-nav {
     background-image: linear-gradient(90deg, rgb(50, 50, 60) 20%, rgba(50, 50, 60, 0));
     /*background-color: rgb(50, 50, 60);*/
@@ -34,11 +11,11 @@ body {
 
 }
 
-header {
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
-}
+/*header {*/
+/*    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);*/
+/*    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);*/
+/*    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);*/
+/*}*/
 
 .top-nav a {
     text-decoration: none;
@@ -53,6 +30,7 @@ header {
 
 .currentType {
     color: rgb(120, 120, 140);
+    text-decoration: none;
     font-size: 1.8em;
     font-weight: bold;
     z-index: 12;
@@ -82,6 +60,7 @@ header {
 .type2 {
     color: rgb(120, 120, 140);
     background-color: rgb(50, 50, 60);
+    text-decoration: none;
     font-size: 1.2em;
     z-index: 12;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
@@ -109,6 +88,7 @@ header {
 .type3 {
     color: rgb(120, 120, 140);
     font-size: 1.2em;
+    text-decoration: none;
     z-index: 12;
     background-color: rgb(50, 50, 60);
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
@@ -208,5 +188,205 @@ footer {
     color: rgb(170, 170, 190);
     font-size: 1.3rem;
 }
+
+
+/*BOOKS*/
+
+
+
+.body-books {
+    background-image: url("/images/OldBooks.jpg");
+    /*background-image: linear-gradient(to right, rgb(200,200,150) 10%, rgb(170,170,130) 40%, rgb(200,200,150) 40%);*/
+    background-size: cover;
+}
+
+.container-books {
+    background-color: rgba(0,0,0,0.35);
+}
+
+.top-nav-books {
+    background-image: linear-gradient(90deg, rgb(230, 195, 155) 20%, rgba(170, 150, 100, 0));
+}
+
+/*.header-books {*/
+/*    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);*/
+/*    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);*/
+/*    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);*/
+/*}*/
+
+.top-nav-books a {
+    text-decoration: none;
+    color: rgb(60, 30, 10);
+}
+
+.top-nav-books a:hover {
+    text-decoration: underline;
+    color: rgb(70, 50, 20);
+    font-size: 1.6rem;
+}
+
+.currentType-books {
+    color: rgb(40, 20, 5);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 12;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+}
+
+.currentType-books:hover {
+    color: rgb(70, 50, 20);
+    text-decoration: underline;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.currentType-books:active {
+    z-index: 0;
+    color: black;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+}
+
+.type2-books {
+    color: rgb(40, 20, 5);
+    background-color: #FFFF99;
+    font-size: 1.2em;
+    z-index: 13;
+    text-decoration: none;
+
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+}
+
+.type2-books:hover {
+    color: rgb(70, 50, 20);
+    text-decoration: underline;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.type2-books:active {
+    z-index: 0;
+    color: black;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+}
+
+.type3-books {
+    color: rgb(40, 20, 5);
+    font-size: 1.2em;
+    z-index: 13;
+    text-decoration: none;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+}
+
+.type3-books:hover {
+    color: rgb(70, 50, 20);
+    text-decoration: underline;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.type3-books:active {
+    z-index: 0;
+    color: black;
+    background-color: #FFFF99;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0);
+}
+
+.focusedReviewListColumn-books{
+    background-color: rgb(230,195,155);
+    -webkit-box-shadow: inset 0px 0px 63px -3px rgba(112,52,7,1);
+    -moz-box-shadow: inset 0px 0px 63px -3px rgba(112,52,7,1);
+    box-shadow: inset 0px 0px 63px -3px rgba(112,52,7,1);
+}
+
+.reviewListColumnItems-books a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(80,30,15);
+    /*font-family: "Bauhaus 93", "Benton Sans", "Brandon Grotesque", "Helvetica", "Times New Roman";*/
+}
+
+.reviewListColumnItems-books a:hover {
+    text-decoration: underline;
+    color: rgb(70, 50, 20);
+    margin-left: -5px;
+}
+
+
+.mediaTitleHeader-books {
+    background-color: #FFFF99;
+    font-size: 2.1rem;
+    max-font-size: 2em;
+    font-weight: bold;
+    color: rgb(70, 50, 20);
+    border-color: black;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+}
+
+.reviewBox-books {
+    -webkit-box-shadow: inset 0px 0px 63px -3px rgba(112,52,7,1);
+    -moz-box-shadow: inset 0px 0px 63px -3px rgba(112,52,7,1);
+    box-shadow: inset 0px 0px 63px -3px rgba(112,52,7,1);
+    background-color: rgb(255,230,200);
+}
+
+.decorativeBackGroundImage2-books{
+    -webkit-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+}
+
+.TextWrap-books {
+    -webkit-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+}
+
+.WrappedText-books {
+    color: rgb(70, 50, 20);
+}
+
+.footer-books {
+    background-color: rgb(230, 195, 155);
+    color: rgb(60, 40, 20);
+}
+
+.footlinks-books a {
+    color: rgb(60, 40, 20);
+    text-decoration: none;
+}
+
+.footlinks-books a:hover {
+    text-decoration: underline;
+    color: rgb(100, 70, 40);
+}
+
 
 

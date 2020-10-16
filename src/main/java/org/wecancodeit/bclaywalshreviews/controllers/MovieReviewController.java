@@ -13,7 +13,7 @@ public class MovieReviewController {
     @Resource
     private MovieReviewsRepository movieReviewRepo;
 
-    @RequestMapping({"/movieReviews","/",""})
+    @RequestMapping({"/movieReviews"})
     public String findAllReviews(Model model) {
         model.addAttribute("movieReviews", movieReviewRepo.findAll());
         return "movieReviewsView";
@@ -24,6 +24,5 @@ public class MovieReviewController {
         MovieReview retrievedMovieReview = movieReviewRepo.findByName(movieReview);
         model.addAttribute("movieReview", retrievedMovieReview);
         return "movieReviewView";
-
     }
 }
