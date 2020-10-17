@@ -36,7 +36,7 @@
             <p class="WrappedText" th:text="${gameReview.content}"></p>
             <div class="leftDecorativeBoxOutline"></div>
         </article>
-        <h2 class="mediaTitleHeader" th:text="${gameReview.name}"></h2>
+        <h2 class="mediaTitleHeader" th:text="${gameReview.name} + ' - ' + ${gameReview.studio}"></h2>
         <div class="rightBoxOutline"></div>
         <!--        <div class="leftDecorativeBoxOutline"></div>-->
         <div class="leftDecorativeBoxOutline2"></div>

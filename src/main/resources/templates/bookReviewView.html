@@ -34,7 +34,7 @@
             <p class="WrappedText-books" th:text="${bookReview.overview}"></p>
             <p class="WrappedText-books" th:text="${bookReview.content}"></p>
         </article>
-        <h2 class="mediaTitleHeader-books" th:text="${bookReview.name}"></h2>
+        <h2 class="mediaTitleHeader-books" th:text="${bookReview.name} + ' - ' + ${bookReview.author}"></h2>
     </main>
     <footer class="footer-books">
         <nav class="footlinks-books">

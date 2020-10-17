@@ -486,6 +486,7 @@ main-books {
 
 .mediaTitleHeader-books {
     grid-column-start: 3;
+    grid-column-end: 7;
     grid-row-start: 1;
     height: 100%;
     width: 100%;

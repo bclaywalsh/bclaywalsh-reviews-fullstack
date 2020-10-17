@@ -115,7 +115,7 @@ body {
 .currentType {
     color: rgb(120, 120, 140);
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: bold;
     z-index: 12;
     background-color: rgb(50, 50, 60);
