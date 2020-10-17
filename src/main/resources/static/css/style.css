@@ -494,11 +494,6 @@ footer {
     background-color: rgb(100, 0, 0);
 }
 
-.side-hole {
-    border-radius: 10px;
-    background-color: white;
-
-}
 
 .top-nav-movies a {
     text-decoration: none;
@@ -633,6 +628,13 @@ footer {
 
 .WrappedText-movies {
     color: lightgray;
+}
+
+
+.side-hole {
+    border-radius: 10px;
+    background-color: rgb(75,75,75);
+
 }
 
 .top-holes {
