@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!--    <meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link href="/css/layout.css" rel="stylesheet"/>
+    <title>BClayWalsh Movie Reviews</title>
 </head>
-<body>
+<body class="body-movies">
+<div class="container-movies">
+    <header class="header-movies">
+        <nav class="top-nav-movies">
+            <h1><a href="/index.html">BClayWalsh Reviews: Movies</a></h1>
+        </nav>
+        <div class="subheader-books">
+            <h2><a class="currentType-movies" href="/movieReviews">Movies</a></h2>
+            <h3><a class="type2-movies" href="/gameReviews">Games</a></h3>
+            <h3><a class="type3-movies" href="/bookReviews">Books</a></h3>
+        </div>
+    </header>
+    <main>
+        <div class="focusedReviewListColumn-movies">
+            <div class="reviewListColumnItems-movies" th:each="movieReview: ${movieReviews}">
+                <a
+                        th:href="@{'/movieReviews/'+${movieReview.name}}"
+                        th:text="${movieReview.name}"
+                ></a>
+            </div>
+        </div>
+        <img class="decorativeBackGroundImage-movies" src="images/openbook.png" alt="An open book">
+        <img class="decorativeBackGroundImage2-movies" src="images/Rapture Cover3.jpg" alt="The book of rapture">
 
+    </main>
+    <footer class="footer-movies">
+        <nav class="footlinks-movies">
+            <a href="mailto:bclaywalsh@gmail.com"
+            >email me: bclaywalsh@gmail.com</a
+            >
+            <a href="http://www.linkedin.com/in/benjamin-walsh-46899445"
+            >linkedIn</a
+            >
+            <a href="https://github.com/bclaywalsh">GitHub</a>
+            <a href="http://bclaywalsh.wixsite.com/portfolio">art portfolio</a>
+            <a href="mailto:DerelictStar01@gmail.com"
+            >email Derelict Star: derelictstar01@gmail.com</a
+            >
+        </nav>
+    </footer>
+</div>
 </body>
 </html>

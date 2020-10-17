@@ -9,6 +9,8 @@ import java.util.Optional;
 
 public interface MovieReviewsRepository extends CrudRepository<MovieReview, Long> {
     Collection<MovieReview> findAll();
+
     Optional<MovieReview> findById(Long id);
+
     MovieReview findByName(String name);
 }

@@ -1,4 +1,5 @@
 package org.wecancodeit.bclaywalshreviews.controllers;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +21,7 @@ public class MovieReviewController {
     }
 
     @RequestMapping("/movieReviews/{movieReview}")
-    public String findOneReview(@PathVariable String movieReview, Model model){
+    public String findOneReview(@PathVariable String movieReview, Model model) {
         MovieReview retrievedMovieReview = movieReviewRepo.findByName(movieReview);
         model.addAttribute("movieReview", retrievedMovieReview);
         return "movieReviewView";

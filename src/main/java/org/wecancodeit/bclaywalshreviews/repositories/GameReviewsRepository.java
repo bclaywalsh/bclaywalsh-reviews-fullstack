@@ -8,6 +8,8 @@ import java.util.Optional;
 
 public interface GameReviewsRepository extends CrudRepository<GameReview, Long> {
     Collection<GameReview> findAll();
+
     Optional<GameReview> findById(Long id);
+
     GameReview findByName(String name);
 }

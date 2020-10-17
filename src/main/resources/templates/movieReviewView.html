@@ -9,24 +9,18 @@
 <body>
 <div class="container">
     <header>
-        <nav class="top-nav">
-            <h1><a href="/reviews">BClayWalsh Reviews:</a></h1>
+        <nav class="top-nav-movies">
+            <h1><a href="/index.html">BClayWalsh Reviews: Movies</a></h1>
         </nav>
-        <div class="subheader">
-            <h2 class="currentType">Indie Movies</h2>
-            <h3 class="type2">Movies</h3>
-            <h3 class="type3">Books</h3>
+        <div class="subheader-books">
+            <h2><a class="currentType-movies" href="/movieReviews">Movies</a></h2>
+            <h3><a class="type2-movies" href="/gameReviews">Games</a></h3>
+            <h3><a class="type3-movies" href="/bookReviews">Books</a></h3>
         </div>
     </header>
 
     <main>
         <div class="focusedReviewListColumn">
-            <div class="reviewListColumnItems">
-                <a href="/review?id=3">Axiom Verge</a>
-                <a href="/review?id=2">Bastion</a>
-                <a href="/review?id=4">Hyper Light Drifter</a>
-                <a href="/review?id=1">Transistor</a>
-            </div>
         </div>
         <article class="reviewBox">
             <img class="TextWrap" th:src="${movieReview.image}" alt="movie cover">
